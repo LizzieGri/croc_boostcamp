@@ -16,7 +16,7 @@
 <!--    <properties>-->
 <!--        <java.version>11</java.version>-->
 <!--    </properties>-->
-<!--    <dependencies>-->
+    <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
