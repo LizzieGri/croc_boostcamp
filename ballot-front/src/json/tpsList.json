@@ -1,0 +1,26 @@
+{
+    "tps":[
+        {
+            "id": 1,
+            "total_all": 10,
+            "total_voted":5
+        },{
+            "id": 2,
+            "total_all": 9,
+            "total_voted":7
+        },{
+            "id": 3,
+            "total_all": 11,
+            "total_voted":3
+        },{
+            "id": 4,
+            "total_all": 11,
+            "total_voted":3
+        },{
+            "id": 5,
+            "total_all": 11,
+            "total_voted":3
+        }
+    ],
+    "time": "10:00"
+}
