@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>Страница для всех работников</h3>
+<br>
+<div sec:authorize="isAuthenticated()">
+<div sec:authorize="hasRole('A')">
+    Для пишущих
+    <input type="button" value="Внесение информации в уик"
+           onclick="window.location.href = '/update-information-station'"/>
+    <br>
+    Для пишущих
+    <input type="button" value="Внесение голосов за кандидатов"
+           onclick="window.location.href = '/votes_for_candidates'"/>
+    <br>
+</div>
+
+<div sec:authorize="hasRole('B')">
+    Для смотрящих
+    <input type="button" value="Просмотр процента посещения для тиков"
+           onclick="window.location.href = '/tiks'"/>
+    <br>
+    Для смотрящих
+    <input type="button" value="Просмотр процента голосов за кандидатов"
+           onclick="window.location.href = '/votes-info'"/>
+    <br>
+    Для смотрящих
+    <input type="button" value="Просмотр посещаемости в МСК"
+           onclick="window.location.href = '/all_attendance'"/>
+</div>
+</div>
+</body>
+</html>
