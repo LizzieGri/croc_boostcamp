@@ -13,10 +13,10 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>elections_mysql</name>
     <description>Demo project for Spring Boot</description>
-    <properties>
-        <java.version>11</java.version>
-    </properties>
-    <dependencies>
+<!--    <properties>-->
+<!--        <java.version>11</java.version>-->
+<!--    </properties>-->
+<!--    <dependencies>-->
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
