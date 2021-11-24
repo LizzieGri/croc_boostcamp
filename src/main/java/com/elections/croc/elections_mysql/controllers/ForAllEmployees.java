@@ -16,5 +16,4 @@ public class ForAllEmployees {
     public String homePage(){
         return "redirect:/login";
     }
-
 }
