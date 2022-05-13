@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ЯВКА НА НА ВЫБОРЫ</title>
+  <style>
+    img {
+      margin-top: 177px;
+    }
+    div#tekst_sverhu_kartinki {
+      position: relative;
+    }
+    #headtext{
+      top: 3%;
+      margin-left: 300px;
+      position: absolute;
+      text-align: center;
+      /*margin: 60px auto 0 auto;*/
+      text-transform: uppercase;
+      font-family: Open Sans;
+      font-size: 37px;
+      letter-spacing: 0.12em;
+      color: #ba1a1a;
+    }
+    #text {
+      top: 2%;
+      position: absolute;
+      font-family: Open Sans;
+      text-align: center;
+      font-size: 34px;
+      margin-top: 70px;
+      margin-left: 467px;
+      color: #ba1a1a;
+    }
+    a.button {
+      display: inline-block;
+      background: #2196f3;
+      color: #fff;
+      padding: 6x;
+      border-radius: 3px;
+      text-decoration: none;
+      font-family: Tahoma;
+      font-size: 16px;
+      line-height: 2;
+      font-weight: 100;
+    }
+
+    div#but {
+      top: 74%;
+      position: absolute;
+      margin-top: 100px;
+      text-align: center;
+      margin-left: 600px;
+    }
+
+    #stolb1 {
+      width: 108px;
+      height: 125px;
+      background: #26447c;
+      margin-left: 120px;
+      margin-top: 100px;
+      position: absolute;
+      top: 40%;
+    }
+
+    #stolb2 {
+      width: 108px;
+      height: 163px;
+      background: #c45f5f;
+      margin-left: 345px;
+      margin-top: 100px;
+      position: absolute;
+      top: 33%;
+    }
+    #stolb3 {
+      width: 108px;
+      height: 209px;
+      background: #26447c;
+      margin-left: 570px;
+      margin-top: 100px;
+      position: absolute;
+      top: 25%;
+    }
+    #stolb4 {
+      width: 108px;
+      height: 156px;
+      background: #c45f5f;
+      margin-left: 795px;
+      margin-top: 100px;
+      position: absolute;
+      top: 34%;
+    }
+    #stolb5 {
+      width: 108px;
+      height: 273px;
+      background: #26447c;
+      margin-left: 1020px;
+      margin-top: 100px;
+      position: absolute;
+      top: 14%;
+    }
+    h1 {
+      margin-top: 137px;
+      text-align: center;
+      font-size: 19px;
+      font-family: Open Sans;
+      color: #ba1a1a;
+      font-weight: bold;
+    }
+    h2 {
+      margin-top: 175px;
+      text-align: center;
+      font-size: 19px;
+      font-family: Open Sans;
+      color: #ba1a1a;
+      font-weight: bold;
+    }
+    h3 {
+      margin-top: 221px;
+      text-align: center;
+      font-size: 19px;
+      font-family: Open Sans;
+      color: #ba1a1a;
+      font-weight: bold;
+    }
+    h4 {
+      margin-top: 168px;
+      text-align: center;
+      font-size: 19px;
+      font-family: Open Sans;
+      color: #ba1a1a;
+      font-weight: bold;
+    }
+    h5 {
+      margin-top: 284px;
+      text-align: center;
+      font-size: 19px;
+      font-family: Open Sans;
+      color: #ba1a1a;
+      font-weight: bold;
+    }
+    .count {
+      margin-top: -26px;
+      text-align: center;
+      font-size: 20px;
+      font-family: Open Sans;
+      color: #000000;
+      font-weight: bold;
+    }
+    p { display: inline; }
+
+    .count:after{
+      content: "%";
+    }
+  </style>
+</head>
+<body>
+<div id="tekst_sverhu_kartinki">
+  <img width="1270px" height="400px" src="images/FON.jpg" alt="Фон" />
+  <div id="headtext">Выборы мэра Москвы 2023</div>
+  <div id="text">ЯВКА НА ВЫБОРЫ</div>
+  <div id="stolb1">
+    <div class="count"><p th:text="${tik1.getPercentVoters()}"/></div>
+    <h1><span>ТИК района<br>Лефортово</span></h1>
+  </div>
+  <div id="stolb2">
+    <div class="count"><p th:text="${tik2.getPercentVoters()}"/></div>
+    <h2><span>ТИК района<br>Марьино</span></h2>
+  </div>
+  <div id="stolb3">
+    <div class="count"><p th:text="${tik3.getPercentVoters()}"/></div>
+    <h3><span>ТИК района<br>Митино</span></h3>
+  </div>
+  <div id="stolb4">
+    <div class="stolb">
+      <div class="count"><p th:text="${tik4.getPercentVoters()}"/></div>
+      <h4><span>ТИК района<br>Печатники</span></h4>
+    </div>
+  </div>
+  <div id="stolb5"
+  <div class="stolb">
+    <div class="count"><p th:text="${tik5.getPercentVoters()}"/></div>
+    <h5><span>ТИК района<br>Покровское-Стрешнево</span></h5>
+  </div></div>
+<div id="but">
+  <a class="button" href="/">ВЫХОД</a>
+</div>
+</div>
+</body>
+</html>

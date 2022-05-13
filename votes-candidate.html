@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ИТОГИ</title>
+    <style>
+        img {
+
+        }
+        div#tekst_sverhu_kartinki {
+            position: relative;
+            margin-top: 160px;
+        }
+        #headtext{
+            top: -37%;
+            margin-left: 356px;
+            position: absolute;
+            text-align: center;
+            /*margin: 60px auto 0 auto;*/
+            text-transform: uppercase;
+            font-family: Open Sans;
+            font-size: 30px;
+            letter-spacing: 0.12em;
+            color: #ba1a1a;
+        }
+        #text {
+            top: -41%;
+            position: absolute;
+            font-family: Open Sans;
+            text-align: center;
+            font-size: 22px;
+            margin-top: 54px;
+            margin-left: 424px;
+            color: #ba1a1a;
+        }
+        a.button {
+            display: inline-block;
+            background: #2196f3;
+            color: #fff;
+            padding: 6x;
+            border-radius: 3px;
+            text-decoration: none;
+            font-family: Tahoma;
+            font-size: 16px;
+            line-height: 2;
+            font-weight: 100;
+        }
+
+        div#but {
+            top: 74%;
+            position: absolute;
+            margin-top: 100px;
+            text-align: center;
+            margin-left: 600px;
+        }
+
+        #stolb1 {
+            width: 108px;
+            height: 223px;
+            background: #26447c;
+            margin-left: 120px;
+            margin-top: 100px;
+            position: absolute;
+            top: -38%;
+        }
+
+        #stolb2 {
+            width: 108px;
+            height: 68px;
+            background: #3F2A61;
+            margin-left: 345px;
+            margin-top: 100px;
+            position: absolute;
+            top: 1%;
+        }
+        #stolb3 {
+            width: 108px;
+            height: 24px;
+            background: #79428A;
+            margin-left: 570px;
+            margin-top: 100px;
+            position: absolute;
+            top: 12%;
+        }
+        #stolb4 {
+            width: 108px;
+            height: 17px;
+            background: #c45f5f;
+            margin-left: 795px;
+            margin-top: 100px;
+            position: absolute;
+            top: 14%;
+        }
+        #stolb5 {
+            width: 108px;
+            height: 10px;
+            background: #FD725F;
+            margin-left: 1020px;
+            margin-top: 100px;
+            position: absolute;
+            top: 16%;
+        }
+        h1 {
+            margin-top: 1px;
+            text-align: left;
+            font-size: 19px;
+            font-family: Open Sans;
+            color: #ba1a1a;
+            font-weight: bold;
+        }
+        h2 {
+            margin-top: 1px;
+            text-align: left;
+            font-size: 19px;
+            font-family: Open Sans;
+            color: #ba1a1a;
+            font-weight: bold;
+        }
+        h3 {
+            margin-top: 1px;
+            text-align: left;
+            font-size: 19px;
+            font-family: Open Sans;
+            color: #ba1a1a;
+            font-weight: bold;
+        }
+        h4 {
+            margin-top: 1px;
+            text-align: left;
+            font-size: 19px;
+            font-family: Open Sans;
+            color: #ba1a1a;
+            font-weight: bold;
+        }
+        h5 {
+            margin-top: 1px;
+            text-align: left;
+            font-size: 19px;
+            font-family: Open Sans;
+            color: #ba1a1a;
+            font-weight: bold;
+        }
+        .count {
+            margin-top: -26px;
+            text-align: center;
+            font-size: 20px;
+            font-family: Open Sans;
+            color: #000000;
+            font-weight: bold;
+        }
+        p { display: inline; }
+
+        .count:after{
+            content: "%";
+        }
+
+        .bottomtext:before{
+            content:"Общая явка: ";
+        }
+
+        .bottomtext:after{
+            content: " %";
+        }
+        img1 {
+            margin-top: 1px;
+        }
+    </style>
+</head>
+<body>
+<div id="tekst_sverhu_kartinki">
+    <img width="1270px" height="400px" src="images/FON.jpg" alt="Фон" />
+    <div id="headtext">Выборы мэра Москвы 2023</div>
+    <div id="text">ИТОГИ ВЫБОРОВ МЭРА МОСКВЫ</div>
+    <div id="stolb1">
+        <div class="count"><p th:text="${candidate1.getPercentVotes()}"/></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id = "img1"><img height="160px"
+             width= "108px" src="images/c1.jpg"></div>
+        <h1><span>Собянин<br>Сергей<br>Семёнович</span></h1>
+    </div>
+    <div id="stolb2">
+        <div class="count"><p th:text="${candidate2.getPercentVotes()}"/></div>
+        <br><br><br><br><br>
+        <img height="160px"
+             width= "108px" src="images/c2.jpeg">
+        <h2><span>Кумин<br>Вадим<br>Валентинович</span></h2>
+    </div>
+    <div id="stolb3">
+        <div class="count"><p th:text="${candidate3.getPercentVotes()}"/></div>
+        <br><br>
+        <img height="160px"
+             width= "108px" src="images/c3.jpeg">
+        <h3><span>Свиридов<br>Илья<br>Тимурович</span></h3>
+    </div>
+    <div id="stolb4">
+        <div class="stolb">
+            <div class="count"><p th:text="${candidate4.getPercentVotes()}"/></div>
+            <br><br>
+            <img height="160px"
+                 width= "108px" src="images/c4.jpg">
+            <h4><span>Дегтярёв<br>Михаил<br>Владимирович</span></h4>
+        </div>
+    </div>
+    <div id="stolb5">
+    <div class="stolb">
+        <div class="count"><p th:text="${candidate5.getPercentVotes()}"/></div>
+        <br>
+        <img height="160px"
+             width= "108px" src="images/c5.webp">
+        <h5><span>Балакин<br>Михаил<br>Дмитриевич</span></h5>
+    </div>
+</div>
+</div>
+</body>
+</html>
